@@ -16,26 +16,27 @@ def create_simple_form():
     form = c.acroForm
 
     c.drawString(10, 650, 'First Name:')
-    #form.textfield(name='fname', tooltip='First Name',
-                  # x=110, y=635,
-                   #width=300)
+    form.textfield(name='fname', tooltip='First Name',
+                   x=110, y=635,
+                   width=300)
+
     c.drawString(10, 600, 'Last Name:')
-    #form.textfield(name='lname', tooltip='Last Name',
-                   #x=110, y=585,
-                   #width=300)
+    form.textfield(name='lname', tooltip='Last Name',
+                   x=110, y=585,
+                   width=300)
 
     c.drawString(10, 550, 'Address:')
-    #form.textfield(name='address', tooltip='Address',
-                   #x=110, y=535,
-                   #width=400)
+    form.textfield(name='address', tooltip='Address',
+                   x=110, y=535,
+                   width=400)
 
     c.drawString(10, 500, 'City:')
-    #form.textfield(name='city', tooltip='City',
-                   #x=110, y=485)
+    form.textfield(name='city', tooltip='City',
+                   x=110, y=485)
 
     c.drawString(250, 500, 'State:')
-    #form.textfield(name='state', tooltip='State',
-                   #x=350, y=485)
+    form.textfield(name='state', tooltip='State',
+                   x=350, y=485)
 
     c.drawString(10, 450, 'Zip Code:')
     form.textfield(name='zip_code', tooltip='Zip Code',

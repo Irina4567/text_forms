@@ -11,6 +11,6 @@ import fill_form
 if __name__ == '__main__':
     create_form.create_simple_form()
     fill_form.create_overlay()
-    fill_form.merge_pdfs('simple_form.pdf', 'simple_form_overlay.pdf', 'merged_form.pdf')
+    fill_form.merge_pdfs('simple_form_overlay.pdf', 'simple_form.pdf', 'merged_form.pdf')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
