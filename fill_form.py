@@ -33,9 +33,3 @@ def merge_pdfs(form_pdf, overlay_pdf, output):
 
     writer = pdfrw.PdfWriter()
     writer.write(output, form)
-
-if __name__ == '__main__':
-    create_overlay()
-    merge_pdfs('simple_form.pdf',
-               'simple_form_overlay.pdf',
-               'merged_form.pdf')
