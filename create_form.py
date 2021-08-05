@@ -1,6 +1,6 @@
 from reportlab.pdfgen import canvas
 from reportlab.pdfbase import pdfform
-from reportlab.lib.colors import magenta, pink, blue, green
+from reportlab.lib.colors import magenta, pink, blue, green, white
 import pdfrw
 from reportlab.pdfgen import canvas
 
@@ -16,7 +16,8 @@ def create_simple_form():
     form = c.acroForm
 
     c.drawString(10, 650, 'First Name:')
-    form.textfield(name='fname', tooltip='First Name',
+    form.textfield(name='fname', tooltip='First Name', fillColor=white, borderStyle='underlined', borderColor=white,
+                   forceBorder=False,
                    x=110, y=635,
                    width=300)
 
